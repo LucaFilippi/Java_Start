@@ -1,0 +1,1 @@
+This repository was created to host the initial lessons and first projects developed in the Java language. There are no extremely comprehensive projects here, nor anything particularly unique—just practice exercises to become familiar with the language.
