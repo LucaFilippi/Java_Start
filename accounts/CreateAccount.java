@@ -1,4 +1,5 @@
 package accounts;
+
 public class CreateAccount {
 
     public static void main(String[] args) {
@@ -12,13 +13,8 @@ public class CreateAccount {
         Account secondAccount = new Account();
         secondAccount.balance = 50;
 
-
         System.out.println(" the first account balance is " + firstAccount.balance + " dollars");
         System.out.println(" the first account balance is " + secondAccount.balance + " dollars");
-
-
-
-
 
     }
 }

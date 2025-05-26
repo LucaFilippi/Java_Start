@@ -23,4 +23,17 @@ public class Account {
             return false;
         }
     }
+
+    public boolean tranference(double value, Account destineAccount) {
+        if (balance >= value) {
+            balance -= value;
+            destineAccount.deposit(value);
+            return true;
+        } else {
+            System.out.println("no founds, the transaction is impossible");
+            return false;
+        }
+
+    }
+
 }
