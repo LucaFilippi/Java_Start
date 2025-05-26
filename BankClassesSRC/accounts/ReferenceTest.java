@@ -4,18 +4,18 @@ public class ReferenceTest {
 
     public static void main(String[] args) {
         Account firstAccount = new Account();
-        firstAccount.balance = 300;
+        firstAccount.deposit(300);
 
-        System.out.println("the first account balace is " + firstAccount.balance);
+        System.out.println("the first account balace is " + firstAccount.getBalance());
 
         Account secondAccount = firstAccount;
 
-        System.out.println("the second account balace is " + secondAccount.balance);
+        System.out.println("the second account balace is " + secondAccount.getBalance());
 
         secondAccount.balance += 100;
 
-        System.out.println("the second account balace is " + secondAccount.balance);
-        System.out.println("the first account balace is " + firstAccount.balance);
+        System.out.println("the second account balace is " + secondAccount.getBalance());
+        System.out.println("the first account balace is " + firstAccount.getBalance());
 
         if (firstAccount == secondAccount) {
             System.out.println("They are the same account"); // just to show that, it can have the same name, but its only one object

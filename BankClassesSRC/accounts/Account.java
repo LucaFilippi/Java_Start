@@ -1,18 +1,20 @@
 package accounts;
 // balance, branch, number, holder
 
+import costumers.*;
+
+
 public class Account {
 
-    double balance;
+    private double balance;
     int branch, number;
-    String holder;
+    public Costumer holder; 
 
     public void deposit(double value) {
         balance = balance + value;
         //this.balance = this.balance + value 
         //"this" serves to show that the variable is not local for the function, but the account.
     }
-
     public boolean withdrawal(double value) {
 
         if (balance >= value) {
@@ -23,7 +25,6 @@ public class Account {
             return false;
         }
     }
-
     public boolean tranference(double value, Account destineAccount) {
         if (balance >= value) {
             balance -= value;
@@ -33,7 +34,11 @@ public class Account {
             System.out.println("no founds, the transaction is impossible");
             return false;
         }
-
     }
 
+    public double getBalance (){
+
+
+        return balance;
+    }
 }

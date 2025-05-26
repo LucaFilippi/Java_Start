@@ -4,10 +4,9 @@ public class MetodTest {
 
     public static void main(String[] args) {
         Account lucasaccount = new Account();
-        lucasaccount.balance = 100;
-        lucasaccount.deposit(50);
+        lucasaccount.deposit(150);
 
-        System.out.println(lucasaccount.balance);
+        System.out.println(lucasaccount.getBalance());
 
     }
 }
